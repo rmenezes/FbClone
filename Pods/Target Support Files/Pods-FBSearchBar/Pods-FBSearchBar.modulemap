@@ -1,0 +1,6 @@
+framework module Pods_FBSearchBar {
+  umbrella header "Pods-FBSearchBar-umbrella.h"
+
+  export *
+  module * { export * }
+}
