@@ -32,6 +32,7 @@
 		E52D47B8226BA46800E9817B /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D47B7226BA46800E9817B /* CircularTransition.swift */; };
 		E52D47BB226BAA4100E9817B /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D47BA226BAA4100E9817B /* StoryViewController.swift */; };
 		E52D47BD226BABD100E9817B /* HistoryTransitionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D47BC226BABD100E9817B /* HistoryTransitionObject.swift */; };
+		E52D47BF226E269000E9817B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D47BE226E269000E9817B /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		E52D47B7226BA46800E9817B /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
 		E52D47BA226BAA4100E9817B /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		E52D47BC226BABD100E9817B /* HistoryTransitionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTransitionObject.swift; sourceTree = "<group>"; };
+		E52D47BE226E269000E9817B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			children = (
 				E50BC80A226906B300D3A1C5 /* ViewController.swift */,
 				E52D47BA226BAA4100E9817B /* StoryViewController.swift */,
+				E52D47BE226E269000E9817B /* CameraViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				E50BC82E2269ED6900D3A1C5 /* ContentViewCell.swift in Sources */,
 				E50BC839226A1BC100D3A1C5 /* Extensions+UIButton.swift in Sources */,
 				E50BC80B226906B300D3A1C5 /* ViewController.swift in Sources */,
+				E52D47BF226E269000E9817B /* CameraViewController.swift in Sources */,
 				E50BC82C2269EBA500D3A1C5 /* CommunityPost.swift in Sources */,
 				E50BC809226906B300D3A1C5 /* AppDelegate.swift in Sources */,
 				E50BC8272269EA1A00D3A1C5 /* History.swift in Sources */,

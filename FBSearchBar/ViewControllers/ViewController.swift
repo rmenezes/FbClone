@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    // Fields
     fileprivate let transition = CircularTransition()
     fileprivate var collectionView: UICollectionView!
     fileprivate var datasource: [Content] = [] {
@@ -40,7 +40,8 @@ class ViewController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "IconCamera").withRenderingMode(.alwaysTemplate),
                                                            style: .plain,
                                                            target: self,
-                                                           action: nil)
+                                                           action: #selector(onCamera(_:)))
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "IconMessenger").withRenderingMode(.alwaysTemplate),
                                                             style: .plain,
                                                             target: self,
@@ -82,6 +83,20 @@ class ViewController: UIViewController {
     
     fileprivate func setupConstraints() {
         collectionView.fillSuperview()
+    }
+    
+    // MARK: - Handlers
+    @objc func onCamera(_ sender: Any) {
+        let cameraViewController = CameraViewController()
+        
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromLeft
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        view.window!.layer.add(transition, forKey: kCATransition)
+
+        present(cameraViewController, animated: false, completion: nil)
     }
 }
 

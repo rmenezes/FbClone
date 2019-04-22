@@ -49,6 +49,7 @@ class HistoriesContentViewCell: UICollectionViewCell, ContentViewCell {
         collectionView.dataSource = self
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
         collectionView.backgroundColor = .white
+        collectionView.showsHorizontalScrollIndicator = false
     }
     
     fileprivate func setupConstraints() {
